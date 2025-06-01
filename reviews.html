@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews - TechSecure Hub</title>
+    <meta name="description" content="In-depth reviews of cybersecurity tools, hardware, and software. Get expert insights before making your technology purchases.">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="blog-header">
+        <div class="header-container">
+            <a href="index.html" class="blog-title">
+                <span class="shield-icon">🛡️</span>
+                TechSecure Hub
+            </a>
+            <nav class="nav-desktop">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="security.html">Security Guides</a></li>
+                    <li><a href="reviews.html" class="nav-active">Product Reviews</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+        </div>
+        <nav class="nav-mobile" id="mobileNav">
+            <ul class="nav-menu-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="security.html">Security Guides</a></li>
+                <li><a href="reviews.html">Product Reviews</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <main class="content-area">
+            <section class="hero-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="card-title">Product Reviews</h1>
+                        <p class="card-description">Expert reviews and comparisons of cybersecurity tools, hardware, and software to help you make informed decisions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="articles-section">
+                <div class="articles-grid">
+                    <article class="article-card featured">
+                        <span class="featured-badge">Featured</span>
+                        <h3 class="article-title">
+                            <a href="articles/best-vpn-review.html">Best VPN Services 2024: Security & Privacy Tested</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Jane Reviewer</span>
+                            <span>March 12, 2024</span>
+                            <span>8 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="security.html" class="label">Privacy</a>
+                        </div>
+                        <p class="article-excerpt">Comprehensive review of the top VPN services focusing on security features, privacy policies, and performance testing across multiple platforms.</p>
+                        <a href="articles/best-vpn-review.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/password-manager-review.html">Password Manager Comparison: 1Password vs Bitwarden vs LastPass</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Security Tester</span>
+                            <span>March 5, 2024</span>
+                            <span>7 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="security.html" class="label">Tools</a>
+                        </div>
+                        <p class="article-excerpt">Detailed comparison of popular password managers focusing on security features, usability, and pricing to help you choose the best option.</p>
+                        <a href="articles/password-manager-review.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/antivirus-comparison.html">Enterprise Antivirus Solutions: Norton vs McAfee vs Kaspersky</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Enterprise Reviewer</span>
+                            <span>February 28, 2024</span>
+                            <span>9 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="security.html" class="label">Enterprise</a>
+                        </div>
+                        <p class="article-excerpt">In-depth analysis of enterprise antivirus solutions comparing detection rates, performance impact, and management features for business environments.</p>
+                        <a href="articles/antivirus-comparison.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/hardware-firewall-review.html">SonicWall TZ370 vs Fortinet FortiGate 60F: Hardware Firewall Review</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Hardware Expert</span>
+                            <span>February 20, 2024</span>
+                            <span>6 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="reviews.html" class="label">Hardware</a>
+                        </div>
+                        <p class="article-excerpt">Comprehensive comparison of popular hardware firewalls for small to medium businesses, including performance benchmarks and feature analysis.</p>
+                        <a href="articles/hardware-firewall-review.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/backup-software-review.html">Best Backup Software for Business: Acronis vs Veeam vs Carbonite</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Data Expert</span>
+                            <span>February 15, 2024</span>
+                            <span>5 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="security.html" class="label">Backup</a>
+                        </div>
+                        <p class="article-excerpt">Detailed review of leading backup solutions comparing features, pricing, and recovery capabilities to protect your business data.</p>
+                        <a href="articles/backup-software-review.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/security-camera-review.html">Top Security Cameras for Home and Office: Arlo vs Ring vs Hikvision</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Surveillance Expert</span>
+                            <span>February 10, 2024</span>
+                            <span>7 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="reviews.html" class="label">Hardware</a>
+                        </div>
+                        <p class="article-excerpt">Complete review of security camera systems covering video quality, storage options, and integration capabilities for comprehensive surveillance.</p>
+                        <a href="articles/security-camera-review.html" class="read-more">Read more →</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">Review Categories</h3>
+                <div class="widget-content">
+                    <ul>
+                        <li><a href="reviews.html">VPN Services <span>(5)</span></a></li>
+                        <li><a href="reviews.html">Password Managers <span>(4)</span></a></li>
+                        <li><a href="reviews.html">Antivirus Software <span>(6)</span></a></li>
+                        <li><a href="reviews.html">Hardware Firewalls <span>(3)</span></a></li>
+                        <li><a href="reviews.html">Security Cameras <span>(4)</span></a></li>
+                        <li><a href="reviews.html">Backup Solutions <span>(3)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-title">Top Rated Products</h3>
+                <div class="widget-content">
+                    <ul>
+                        <li><a href="articles/best-vpn-review.html">NordVPN - 9.2/10</a></li>
+                        <li><a href="articles/password-manager-review.html">1Password - 9.0/10</a></li>
+                        <li><a href="articles/antivirus-comparison.html">Kaspersky - 8.8/10</a></li>
+                        <li><a href="articles/hardware-firewall-review.html">Fortinet FortiGate - 8.5/10</a></li>
+                        <li><a href="articles/backup-software-review.html">Acronis - 8.7/10</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="widget newsletter-widget">
+                <h3 class="widget-title">Review Updates</h3>
+                <p>Get notified when we publish new product reviews and comparison guides.</p>
+                <form class="newsletter-form-mini" onsubmit="handleNewsletterSignup(event)">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechSecure Hub</h4>
+                    <p>Your trusted source for cybersecurity insights and tech reviews.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="security.html">Security Guides</a></li>
+                        <li><a href="reviews.html">Product Reviews</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSecure Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Guides - TechSecure Hub</title>
+    <meta name="description" content="Comprehensive cybersecurity guides and tutorials to protect your digital assets. Learn threat detection, network security, and best practices.">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="blog-header">
+        <div class="header-container">
+            <a href="index.html" class="blog-title">
+                <span class="shield-icon">🛡️</span>
+                TechSecure Hub
+            </a>
+            <nav class="nav-desktop">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="security.html" class="nav-active">Security Guides</a></li>
+                    <li><a href="reviews.html">Product Reviews</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+        </div>
+        <nav class="nav-mobile" id="mobileNav">
+            <ul class="nav-menu-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="security.html">Security Guides</a></li>
+                <li><a href="reviews.html">Product Reviews</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <main class="content-area">
+            <section class="hero-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="card-title">Security Guides</h1>
+                        <p class="card-description">Comprehensive cybersecurity guides to protect your digital assets and stay ahead of emerging threats.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="articles-section">
+                <div class="articles-grid">
+                    <article class="article-card featured">
+                        <span class="featured-badge">Featured</span>
+                        <h3 class="article-title">
+                            <a href="articles/advanced-threat-detection.html">Advanced Threat Detection: A Complete Guide</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By John Security</span>
+                            <span>March 15, 2024</span>
+                            <span>5 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="security.html" class="label">Enterprise</a>
+                        </div>
+                        <p class="article-excerpt">Learn how to implement advanced threat detection systems to protect your organization from sophisticated cyber attacks using AI and machine learning techniques.</p>
+                        <a href="articles/advanced-threat-detection.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/firewall-configuration.html">Firewall Configuration Best Practices for Small Business</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Network Admin</span>
+                            <span>March 8, 2024</span>
+                            <span>4 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="tutorials.html" class="label">Business</a>
+                        </div>
+                        <p class="article-excerpt">Step-by-step guide to configuring enterprise-grade firewalls for small business networks to prevent unauthorized access and data breaches.</p>
+                        <a href="articles/firewall-configuration.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/zero-trust-architecture.html">Implementing Zero Trust Security Architecture</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Security Expert</span>
+                            <span>March 1, 2024</span>
+                            <span>7 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="security.html" class="label">Enterprise</a>
+                        </div>
+                        <p class="article-excerpt">Comprehensive guide to implementing zero trust security model in your organization, including practical steps and tool recommendations.</p>
+                        <a href="articles/zero-trust-architecture.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/incident-response-plan.html">Creating an Effective Incident Response Plan</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By IR Specialist</span>
+                            <span>February 28, 2024</span>
+                            <span>6 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="tutorials.html" class="label">Planning</a>
+                        </div>
+                        <p class="article-excerpt">Learn how to develop and implement a comprehensive incident response plan to minimize damage and recovery time during security breaches.</p>
+                        <a href="articles/incident-response-plan.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/cloud-security-essentials.html">Cloud Security Essentials for Modern Businesses</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Cloud Expert</span>
+                            <span>February 25, 2024</span>
+                            <span>5 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="security.html" class="label">Cloud</a>
+                        </div>
+                        <p class="article-excerpt">Essential security practices for protecting your cloud infrastructure across AWS, Azure, and Google Cloud platforms.</p>
+                        <a href="articles/cloud-security-essentials.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/endpoint-protection.html">Endpoint Protection Strategy for Remote Work</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Remote Security</span>
+                            <span>February 20, 2024</span>
+                            <span>4 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="security.html" class="label">Remote Work</a>
+                        </div>
+                        <p class="article-excerpt">Comprehensive endpoint protection strategies for securing remote workers and distributed teams in the modern workplace.</p>
+                        <a href="articles/endpoint-protection.html" class="read-more">Read more →</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">Security Topics</h3>
+                <div class="widget-content">
+                    <ul>
+                        <li><a href="security.html">Threat Detection <span>(8)</span></a></li>
+                        <li><a href="security.html">Network Security <span>(12)</span></a></li>
+                        <li><a href="security.html">Cloud Security <span>(6)</span></a></li>
+                        <li><a href="security.html">Incident Response <span>(5)</span></a></li>
+                        <li><a href="security.html">Endpoint Protection <span>(7)</span></a></li>
+                        <li><a href="security.html">Zero Trust <span>(4)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-title">Latest Security News</h3>
+                <div class="widget-content">
+                    <ul>
+                        <li><a href="articles/security-news-1.html">New Critical Vulnerability in Popular Software</a></li>
+                        <li><a href="articles/security-news-2.html">Ransomware Attacks Increase by 40%</a></li>
+                        <li><a href="articles/security-news-3.html">AI-Powered Security Tools Show Promise</a></li>
+                        <li><a href="articles/security-news-4.html">Government Issues New Cybersecurity Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="widget newsletter-widget">
+                <h3 class="widget-title">Security Alerts</h3>
+                <p>Get immediate notifications about critical security threats and vulnerabilities.</p>
+                <form class="newsletter-form-mini" onsubmit="handleNewsletterSignup(event)">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechSecure Hub</h4>
+                    <p>Your trusted source for cybersecurity insights and tech reviews.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="security.html">Security Guides</a></li>
+                        <li><a href="reviews.html">Product Reviews</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSecure Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

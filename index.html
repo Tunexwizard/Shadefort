@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSecure Hub - Cybersecurity & Tech Reviews</title>
+    <meta name="description" content="Your trusted source for cybersecurity insights, product reviews, and tech tutorials. Stay secure, stay informed.">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="TechSecure Hub - Cybersecurity & Tech Reviews">
+    <meta property="og:description" content="Your trusted source for cybersecurity insights, product reviews, and tech tutorials.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="blog-header">
+        <div class="header-container">
+            <a href="index.html" class="blog-title">
+                <span class="shield-icon">🛡️</span>
+                TechSecure Hub
+            </a>
+            <nav class="nav-desktop">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-active">Home</a></li>
+                    <li><a href="security.html">Security Guides</a></li>
+                    <li><a href="reviews.html">Product Reviews</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+        </div>
+        <nav class="nav-mobile" id="mobileNav">
+            <ul class="nav-menu-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="security.html">Security Guides</a></li>
+                <li><a href="reviews.html">Product Reviews</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="card-title">Welcome to TechSecure Hub</h1>
+                        <p class="card-description">Your trusted source for cybersecurity insights, product reviews, and tech tutorials. Stay secure, stay informed.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter-signup">
+                <h2 class="newsletter-title">Stay Updated</h2>
+                <p class="newsletter-description">Get the latest security news and product reviews delivered to your inbox.</p>
+                <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                    <input class="newsletter-input" type="email" placeholder="Enter your email" required>
+                    <button class="newsletter-button" type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <!-- Featured Articles -->
+            <section class="featured-section">
+                <h2 class="section-title">Featured Articles</h2>
+                <div class="articles-grid">
+                    <article class="article-card featured">
+                        <span class="featured-badge">Featured</span>
+                        <h3 class="article-title">
+                            <a href="articles/advanced-threat-detection.html">Advanced Threat Detection: A Complete Guide</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By John Security</span>
+                            <span>March 15, 2024</span>
+                            <span>5 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="security.html" class="label">Enterprise</a>
+                        </div>
+                        <p class="article-excerpt">Learn how to implement advanced threat detection systems to protect your organization from sophisticated cyber attacks...</p>
+                        <a href="articles/advanced-threat-detection.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/best-vpn-review.html">Best VPN Services 2024: Security & Privacy Tested</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Jane Reviewer</span>
+                            <span>March 12, 2024</span>
+                            <span>8 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="security.html" class="label">Privacy</a>
+                        </div>
+                        <p class="article-excerpt">Comprehensive review of the top VPN services focusing on security features, privacy policies, and performance...</p>
+                        <a href="articles/best-vpn-review.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <h3 class="article-title">
+                            <a href="articles/secure-coding-practices.html">Secure Coding Practices Every Developer Should Know</a>
+                        </h3>
+                        <div class="article-meta">
+                            <span>By Dev Expert</span>
+                            <span>March 10, 2024</span>
+                            <span>6 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="tutorials.html" class="label">Tutorials</a>
+                            <a href="security.html" class="label">Development</a>
+                        </div>
+                        <p class="article-excerpt">Essential secure coding practices to protect your applications from common vulnerabilities and security threats...</p>
+                        <a href="articles/secure-coding-practices.html" class="read-more">Read more →</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Recent Articles -->
+            <section class="recent-section">
+                <h2 class="section-title">Recent Articles</h2>
+                <div class="articles-list">
+                    <article class="article-item">
+                        <h4 class="article-title">
+                            <a href="articles/firewall-configuration.html">Firewall Configuration Best Practices for Small Business</a>
+                        </h4>
+                        <div class="article-meta">
+                            <span>March 8, 2024</span>
+                            <span>4 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="security.html" class="label">Security</a>
+                            <a href="tutorials.html" class="label">Business</a>
+                        </div>
+                    </article>
+
+                    <article class="article-item">
+                        <h4 class="article-title">
+                            <a href="articles/password-manager-review.html">Password Manager Comparison: 1Password vs Bitwarden vs LastPass</a>
+                        </h4>
+                        <div class="article-meta">
+                            <span>March 5, 2024</span>
+                            <span>7 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="reviews.html" class="label">Reviews</a>
+                            <a href="security.html" class="label">Tools</a>
+                        </div>
+                    </article>
+
+                    <article class="article-item">
+                        <h4 class="article-title">
+                            <a href="articles/two-factor-setup.html">How to Set Up Two-Factor Authentication on Popular Services</a>
+                        </h4>
+                        <div class="article-meta">
+                            <span>March 2, 2024</span>
+                            <span>5 min read</span>
+                        </div>
+                        <div class="article-labels">
+                            <a href="tutorials.html" class="label">Tutorials</a>
+                            <a href="security.html" class="label">Authentication</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Stats Dashboard -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Security Articles</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Product Reviews</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Monthly Readers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Community Rating</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Search Widget -->
+            <div class="widget">
+                <h3 class="widget-title">Search Articles</h3>
+                <form class="search-form" onsubmit="handleSearch(event)">
+                    <input class="search-input" type="text" placeholder="Search articles..." id="searchInput">
+                    <button class="search-button" type="submit">Search</button>
+                </form>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="widget">
+                <h3 class="widget-title">Categories</h3>
+                <div class="widget-content">
+                    <ul>
+                        <li><a href="security.html">Cybersecurity <span>(25)</span></a></li>
+                        <li><a href="reviews.html">Product Reviews <span>(15)</span></a></li>
+                        <li><a href="tutorials.html">Tutorials <span>(20)</span></a></li>
+                        <li><a href="security.html">Privacy Tools <span>(12)</span></a></li>
+                        <li><a href="reviews.html">Hardware Reviews <span>(8)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Popular Articles Widget -->
+            <div class="widget">
+                <h3 class="widget-title">Popular This Week</h3>
+                <div class="widget-content">
+                    <ul>
+                        <li><a href="articles/advanced-threat-detection.html">Advanced Threat Detection Guide</a></li>
+                        <li><a href="articles/best-vpn-review.html">Best VPN Services 2024</a></li>
+                        <li><a href="articles/secure-coding-practices.html">Secure Coding Practices</a></li>
+                        <li><a href="articles/firewall-configuration.html">Firewall Configuration Tips</a></li>
+                        <li><a href="articles/password-manager-review.html">Password Manager Comparison</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter CTA -->
+            <div class="widget newsletter-widget">
+                <h3 class="widget-title">Stay Secure</h3>
+                <p>Join 5,000+ readers getting weekly security updates and reviews.</p>
+                <form class="newsletter-form-mini" onsubmit="handleNewsletterSignup(event)">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechSecure Hub</h4>
+                    <p>Your trusted source for cybersecurity insights and tech reviews.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="security.html">Security Guides</a></li>
+                        <li><a href="reviews.html">Product Reviews</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSecure Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
